@@ -10,15 +10,17 @@
 #include <stdlib.h>
 #include <windows.h>
 #include <string.h>
+#include <math.h>
 
 #include "../test_files/test_lib_1.h"
 
+const char *path = "testFile.txt";
 int main(void)
 {
-	// while(1)
-	// {printf("Hello World!\n");
-	// Sleep(1000);}
-	
-	printf("%d Factorial = %d ",5, factorial(5));
+	if(findMedian(path) == 0.00)
+	{
+		return EXIT_FAILURE;
+	}
 	return EXIT_SUCCESS;
 }
+

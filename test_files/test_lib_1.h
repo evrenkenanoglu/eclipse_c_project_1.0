@@ -18,19 +18,20 @@
 #include <windows.h>
 #include <string.h>
 #include <stdint.h>
+#include <math.h>
 /** CONSTANTS *****************************************************************/
 
 /** TYPEDEFS ******************************************************************/
 
 /** MACROS ********************************************************************/
-
+#define MAX_LINE_LENGTH 1024
+#define FALSE 0
+#define TRUE 1
 /** VARIABLES *****************************************************************/
 
 /** FUNCTIONS *****************************************************************/
 
-uint32_t* isNull(void* ptr);
-uint32_t sizeOfArray(const char *ptr);
-uint32_t factorial(uint32_t number);
+double findMedian(const char *filePath);
 
 #undef INTERFACE // Should not let this roam free
 
